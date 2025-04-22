@@ -19,6 +19,11 @@ RUN curl "https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-
     sudo apt-get update && \
     sudo apt-get install -y powershell
 
+# Download and install Azure CLI
+RUN apt-get update && \
+    apt-get install -y curl ca-certificates lsb-release gnupg && \
+    curl -sL https://aka.ms/InstallAzureCLIDeb | bash    
+
 # Set the working directory back
 WORKDIR $THEIA_WORKSPACE_ROOT
 
