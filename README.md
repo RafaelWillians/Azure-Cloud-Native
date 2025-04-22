@@ -1,18 +1,36 @@
-# Repo Template
-Repo template, using Codespaces and GitPod
+# Armazenando dados de um ecommerce na nuvem Azure
 
-Template para repositórios, usando Codespaces e GitPod
+Teste com página web para cadastro de produtos, utilizando Azure Blob Storage e banco de dados SQL Server na nuvem Azure.
 
-## Extensions
-* AWS CLI
-* Microsoft PowerShell
-* Git Graph
-* Git-log
-* GitHub Actions
-* GitHub Copilot
-* GitHub Copilot Chat
-* github markdown preview
+## Página web para cadastro de produtos
 
-## Extras
-Preconfigured AWS tokens (via Repository Secrets) 
+Desenvolvida com Python (complementos Streamlit, pymssql).
 
+![webpage.png](/img/webpage.PNG)
+
+## Resource Group
+
+* Criado um banco de dados Azure SQL (criado também um SQL server para ele).
+* Criado Storage Account e um storage container dentro dele.
+
+![resource-group.png](/img/resource-group.PNG)
+
+## Banco de Dados (Azure SQL)
+
+![bd.png](/img/bd.PNG)
+
+
+
+
+## Consulta no banco de dados
+
+Consulta realizada após o cadastro efetuado pela página web.
+
+![consulta-bd.png](/img/consulta-bd.PNG)
+
+
+## Storage Container
+
+Storage Container com a imagem carregada do cadastro.
+
+![storage-container.png](/img/storage-container.PNG)
