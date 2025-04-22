@@ -13,7 +13,9 @@ tasks:
       sudo apt-get install -y powershell && \
       cd $THEIA_WORKSPACE_ROOT && \
       rm -rf /workspace/awscliv2.zip /workspace/aws && \
-      rm -rf /workspace/packages-microsoft-prod.deb
+      rm -rf /workspace/packages-microsoft-prod.deb && \
+      curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
 
       
       
