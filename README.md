@@ -2,7 +2,7 @@
 
 Teste com página web para cadastro de produtos, utilizando Azure Blob Storage e banco de dados SQL Server na nuvem Azure.
 
-## Página web para cadastro de produtos
+## [Laboratório 1 - Página web para cadastro de produtos](/Lab1/)
 
 Desenvolvida com Python (requer complementos Streamlit, pymssql e azure-storage-blob).
 
