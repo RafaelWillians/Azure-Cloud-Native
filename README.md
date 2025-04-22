@@ -19,15 +19,11 @@ Desenvolvida com Python (requer complementos Streamlit, pymssql e azure-storage-
 
 ![bd.png](/img/bd.PNG)
 
-
-
-
 ## Consulta no banco de dados
 
 Consulta realizada após o cadastro efetuado pela página web.
 
 ![consulta-bd.png](/img/consulta-bd.PNG)
-
 
 ## Storage Container
 
