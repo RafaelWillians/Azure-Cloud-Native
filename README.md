@@ -6,27 +6,27 @@ Teste com página web para cadastro de produtos, utilizando Azure Blob Storage e
 
 Desenvolvida com Python (requer complementos Streamlit, pymssql e azure-storage-blob).
 
-![webpage.png](/img/webpage.PNG)
+![webpage.png](/Lab1/img/webpage.PNG)
 
 ## Resource Group
 
 * Criado um banco de dados Azure SQL (criado também um SQL server para ele).
 * Criado Storage Account e um storage container dentro dele.
 
-![resource-group.png](/img/resource-group.PNG)
+![resource-group.png](/Lab1/img/resource-group.PNG)
 
 ## Banco de Dados (Azure SQL)
 
-![bd.png](/img/bd.PNG)
+![bd.png](/Lab1/img/bd.PNG)
 
 ## Consulta no banco de dados
 
 Consulta realizada após o cadastro efetuado pela página web.
 
-![consulta-bd.png](/img/consulta-bd.PNG)
+![consulta-bd.png](/Lab1/img/consulta-bd.PNG)
 
 ## Storage Container
 
 Storage Container com a imagem carregada do cadastro.
 
-![storage-container.png](/img/storage-container.PNG)
+![storage-container.png](/Lab1/img/storage-container.PNG)
