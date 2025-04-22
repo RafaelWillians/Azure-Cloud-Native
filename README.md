@@ -4,7 +4,7 @@ Teste com página web para cadastro de produtos, utilizando Azure Blob Storage e
 
 ## Página web para cadastro de produtos
 
-Desenvolvida com Python (complementos Streamlit, pymssql).
+Desenvolvida com Python (requer complementos Streamlit, pymssql e azure-storage-blob).
 
 ![webpage.png](/img/webpage.PNG)
 
