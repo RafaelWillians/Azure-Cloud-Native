@@ -67,21 +67,35 @@ def list_products():
     
 def list_products_screen():
     products = list_products()
-    for product in products:
-        st.write(f'Nome: {product[1]}')
-        st.write(f'Preço: {product[2]}')
-        st.write(f'Descrição: {product[3]}')
-        st.image(product[4], width=200)
-
+    if products:
+        # Define número de cards por linha na lista
+        cards_por_linha = 3
+        # Cria as colunas iniciais
+        cols = st.columns(cards_por_linha)
+        for i, product in enumerate(products):
+            col = cols[i % cards_por_linha]
+            with col:
+                st.markdown(f"### {product[1]}")
+                st.write(f"**Descrição:** {product[2]}")
+                st.write(f"**Preço:** R$ {product[3]:.2f}")
+                if product[4]:
+                    html_img = f'<img src="{product[4]}" width="200" height="200" alt="Imagem do produto">'
+                    st.markdown(html_img, unsafe_allow_html=True)
+                st.markdown("---")
+            # A cada produtos em 'cards_por_linha', se ainda houver produtos, cria novas colunas
+            if (i + 1) % cards_por_linha == 0 and (i + 1) < len(products):
+                cols = st.columns(cards_por_linha)
+    else:
+        st.info("Nenhum produto encontrado.")
 
 # Botao para salvar cadastro
 if st.button('Salvar'):
     insert_product(product_name, product_price, product_description, product_image)
     return_message = 'Produto salvo com sucesso'
+    list_products_screen()
 
 st.header('Produtos Cadastrados')
 
 if st.button('Listar Produtos'):
+    list_products_screen()
     return_message = 'Produtos listados com sucesso'
-
-
